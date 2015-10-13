@@ -7,7 +7,7 @@
 
   -webkit-backface-visibility:hidden;
   font-size:@font-size - 1;
-  padding:4px 0 4px 15px;
+  padding:0 0 4px 0;
   color:@text-color;
 
   .is-blurred & {
@@ -34,6 +34,18 @@
       }
     }
   }
+
+  li.project-root > .list-item:before {
+    display: none !important;
+  }
+
+  li.project-root > .header {
+    background: linear-gradient(#c2c0c2, #bbb9bb);
+    border-bottom: 1px solid @tab-bar-border-color;
+    padding: 1px 0 1px 8px;
+  }
+
+  .list-item { padding-left: 4px; }
 
   li.selected {
     color:@text-color;
